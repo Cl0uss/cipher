@@ -28,7 +28,7 @@ string random_key(int length)
 void changing_bits(string &input, int start, int last, string &key, int element)
 {
     if (start>=last) return;
-    if (key[element]%4==4)
+    if (key[element]%4==0)
     {
         char save_first =   input[start]&0b00001111;
         char save_last  =   input[last]&0b00001111;
