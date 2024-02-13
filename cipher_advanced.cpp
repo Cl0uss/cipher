@@ -85,8 +85,8 @@ string add_reminder(string &input,int len)
     string reminder="";
     for (int i=0;i<len;i++)
     {
-        if (input[i]%2==1) reminder+='1';
-        else reminder+='0';
+        if (input[i]%2==1) reminder+='1'; //instead inputting a place of this element
+        else reminder+='0'; // instead input unique character which will mean that the place of reminder element is ended
     }
     return reminder;
 }
