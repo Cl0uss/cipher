@@ -14,7 +14,7 @@ void xor_bits(string &input,string &key,int element, int len)
     if (element>=len) return;
     input[element]^=key[element];
     element++;
-    input[element];
+    input[element]; //??????
     xor_bits(input,key,element,len);
 }
 string random_key(int length) 
@@ -212,3 +212,4 @@ int main()
     }
     Sleep(10000);
 }
+//check questions in code and also make key be not the same length as message (maybe binary representation will help with that)
